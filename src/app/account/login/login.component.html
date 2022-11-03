@@ -1,0 +1,8 @@
+<p>login works!</p>
+<form #loginForm="ngForm">
+    <label for="username">Username :</label>
+    <input type="text" class="form-control" #inputMail="ngModel" ngModel required name="username" id="username">
+    <label for="email">Email :</label>
+    <input type="email" class="form-control" #inputMail="ngModel" ngModel required name="email" id="email">
+    <button class="btn btn-primary" (click)="login(loginForm)">Sign in</button>
+</form>

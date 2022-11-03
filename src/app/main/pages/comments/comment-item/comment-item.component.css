@@ -1,0 +1,14 @@
+div {
+    border-left: 0;
+    border-right: 0;
+    margin: auto;
+    width: 90%;
+}
+
+.email-text {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(104, 104, 229);
+    color: white;
+    padding: 2px;
+}

@@ -1,0 +1,26 @@
+hr {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    width: 45%;
+}
+
+.btn-plus:hover i {
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+    transition: .3s;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        bottom: 0;
+    }
+    25% {
+        bottom: 10px;
+    }
+    75% {
+        bottom: -10px;
+    }
+}

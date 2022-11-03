@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-lg-4">
+        <app-user-profile [user]="user"></app-user-profile>
+    </div>
+    <div class="col-lg-8">
+        <app-profile-navbar [user]="user"></app-profile-navbar>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

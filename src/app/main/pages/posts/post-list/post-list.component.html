@@ -1,0 +1,7 @@
+<div class="">
+    <app-post-item *ngFor="let post of posts | slice:0:i" [i]="i" [post]="post"></app-post-item>
+</div>
+<hr>
+<div class="text-center my-2">
+    <button *ngIf="i<posts.length" (click)="showMorePost()" class="btn btn-plus">Load More    <i class="fa-regular fa-arrow-down"></i></button>
+</div>

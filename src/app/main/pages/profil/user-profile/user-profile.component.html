@@ -1,0 +1,35 @@
+<div class="shadow-sm p-3 mt-3 rounded profile w-100 bg-white">
+    <div class="text-center pictures">
+        <!-- <div class="background">
+            <img src="assets/img/couverture.svg" alt="background" class="back">
+        </div> -->
+        <div class="pdp">
+            <img src="assets/img/user1.svg" alt="user's pic" class="border rounded-circle photo">
+        </div>
+    </div>
+    <div class="text-center my-3 name text-wrap">
+        <i class="fas fa-circle text-success"></i> {{user.name}}<br> <span class="text-secondary" style="font-size: 20px;">({{user.username}})</span><br>
+        <span class="text-secondary" style="font-size: 16px;"> de {{user.company.name}}</span>
+    </div>
+    <hr>
+    <div class="informations px-2">
+        <h5>Contacts :</h5>
+        <i class="fas fa-envelope text-warning mx-3"></i>
+        <a href="mailto:{{user.email}}" class="text-decoration-none text-dark">{{user.email}}</a><br>
+        <i class="fas fa-phone  text-danger mx-3"></i>{{user.phone}}
+        <h5><i class="fas fa-map-marker text-success"></i><span>   </span> Address :</h5>
+        <div class="row">
+            <div class="col">
+                Street : {{user.address.street}} <br> Suite : {{user.address.suite}} <br> City : {{user.address.city}} <br>
+            </div>
+            <div class="col">
+                geo(lat) : {{user.address.geo.lat}} <br> geo(lng): {{user.address.geo.lat}}
+            </div>
+        </div>
+        <details class="mt-2">
+            <summary class="h5">More informations :</summary>
+            <p class="small">Catch : {{user.company.catchPhrase}}</p>
+            <p class="small">Bs : {{user.company.bs}}</p>
+        </details>
+    </div>
+</div>

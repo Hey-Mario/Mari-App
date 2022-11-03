@@ -1,0 +1,24 @@
+<div class="card my-4 mycard mx-auto" data-aos="fade-up">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-1 col-xs-5 mx-2">
+                <a [routerLink]="['/profile/' + user.id]"><img src="assets/img/user1.svg" alt="user's picture"></a>
+            </div>
+            <div class="col-sm-10">
+                <div class="name">
+                    <a [routerLink]="['/profile/' + user.id]" class="text-dark">{{ user.name }} ({{user.username}})</a>
+                    <br>
+                    <a href="mailto: {{ user.email }}" class="text-secondary text-decoration-none">{{ user.email }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <h5 class="card-title">{{ post.title|titlecase }}</h5>
+        <p class="card-text">{{ post.body }}</p>
+    </div>
+    <hr>
+    <div class="row comment px-4">
+        <p class="btn btn-comment" (click)="goToPost(post.id)"> <i class="fa-thin fa-comments"></i> Show comments</p>
+    </div>
+</div>

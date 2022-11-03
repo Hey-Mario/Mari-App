@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid ">
+        <a class="navbar-brand" [routerLink]="['actu']" routerLinkActive="active"><b>𝕸𝖆𝖗𝖎𝕬𝖕𝖕</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" (click)="show()"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show' : visibility}">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['actu']" routerLinkActive="active"><i class="fas fa-home"></i><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['todos/'+ userId]" routerLinkActive="active"><i class="fas fa-th-list"></i> Todo List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['profile/'+ userId]" routerLinkActive="active"><i class="fa-duotone fa-user"></i> Profil</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" name="search" placeholder="Search" #InputSearch="ngModel" ngModel>
+                <button class="btn btn-danger" (click)="search(InputSearch.value)">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

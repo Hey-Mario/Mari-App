@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.css';
+
+/* @import '~aos/dist/aos.css'; */
+
+i {
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+
+/* 
+body {
+    background-color: lightgray;
+} */

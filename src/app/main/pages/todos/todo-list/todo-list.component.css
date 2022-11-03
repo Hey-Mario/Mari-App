@@ -1,0 +1,9 @@
+ol {
+    width: 60%;
+}
+
+@media (max-width:700px) {
+    ol {
+        width: 90%;
+    }
+}
